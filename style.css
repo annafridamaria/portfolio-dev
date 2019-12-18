@@ -13,8 +13,16 @@ h1, h2, h3, h4 {
 h1 {
     font-size: 40px;  
 }
+.header-text h2 {
+    font-size: 25px;
+    background: none;
+    color: #000;
+}
 h2 {
     font-size: 25px;
+    color: #fff;
+    background: purple;
+    padding: 0px 10px;
 }
 
 h3 {
@@ -55,7 +63,7 @@ h3 {
     
 }
 
-.intro, .projects, .tech {
+.intro, .projects, .tech, .writing, .skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +71,7 @@ h3 {
     padding: 0px 316px;
 }
 
-.intro, .projects {
+.intro, .projects, .writing {
     background: #F4F4F4;
 }
 
@@ -81,7 +89,7 @@ h3 {
     opacity: 1;
 }
 
-.my-projects {
+.my-projects, .my-writing {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -93,13 +101,13 @@ h3 {
     margin: 10px;
 
 }
-.project-box img {
+.project-box img, .writing-box img {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
-.project-box a {
+.project-box a, .writing-box a {
     background: plum;
     font-weight: bold;
 }
@@ -108,4 +116,22 @@ h3 {
     display: inline;
     background: plum;
     padding: 0px 5px;
+}
+
+.writing-box {
+    width: 40%
+}
+
+.my-writing {
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.my-skills {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    border: solid 2px salmon;
+    background: sandybrown;
+
 }
