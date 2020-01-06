@@ -2,7 +2,10 @@ html {
     font: Regular 30px/50px Montserrat;
     letter-spacing: 0;
     opacity: 1;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
 h1, h2, h3, h4 {
@@ -10,24 +13,29 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
-h1 {
-    font-size: 40px;  
-}
-.header-text h2 {
-    font-size: 25px;
+.header h1, .header h2, .header h3 {
+    color: #00677c;
     background: none;
-    color: #000;
 }
+
+h1 {
+    font-size: 40px;
+}
+
 h2 {
     font-size: 25px;
     color: #fff;
-    background: purple;
+    background:#0190ad;
     padding: 0px 10px;
 }
 
 h3 {
     font-weight: normal;
     font-size: 16px;
+}
+
+article {
+    font-size: small;
 }
 
 
@@ -37,9 +45,9 @@ h3 {
     width: 100%;
     opacity: 1;
     position: relative;
-    background-image: url("./assets/scott-webb-UjupleczBOY-unsplash.jpg");
-    background-size: contain;
-    background-repeat: repeat;
+    background-image: url('./assets/portrait/resul-DbwYNr8RPbg-unsplash_header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-text {
@@ -63,30 +71,26 @@ h3 {
     
 }
 
-.intro, .projects, .tech, .writing, .skills {
+.intro, .projects, .tech, .writing, .skills, .more, .contact  {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 316px;
+    padding: 50px 316px;
+    
 }
 
-.intro, .projects, .writing {
+.intro, .projects, .skills, .contact {
     background: #F4F4F4;
 }
 
-.intro {
-    height: 300px;
+.intro, .projects {
+    height: auto;
     opacity: 1;
 }
 
 .tech {
-    height: 300px;
-
-}
-.projects {
-    height: 613px;
-    opacity: 1;
+    height: auto;
 }
 
 .my-projects, .my-writing {
@@ -108,13 +112,13 @@ h3 {
 }
 
 .project-box a, .writing-box a {
-    background: plum;
+    background: #93cad1;
     font-weight: bold;
 }
 
 .codeType {
     display: inline;
-    background: plum;
+    background: #93cad1;
     padding: 0px 5px;
 }
 
@@ -129,9 +133,30 @@ h3 {
 }
 
 .my-skills {
-    flex-direction: column-reverse;
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    border: solid 2px salmon;
-    background: sandybrown;
+}
 
+.skillSet {
+    text-align: center;
+    padding: 10px;
+    width: 120px;
+}
+
+.projects img:hover, .writing img:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.more a {
+    text-decoration: none;
+}
+.more img {
+    margin: 10px 20px;
+}
+
+.my-contact {
+    justify-content: center;
+    text-align: center;
 }
