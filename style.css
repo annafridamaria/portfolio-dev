@@ -16,6 +16,7 @@ h1, h2, h3, h4 {
 .header h1, .header h2, .header h3 {
     color: #00677c;
     background: none;
+    margin-bottom: 0px;
 }
 
 h1 {
@@ -27,6 +28,7 @@ h2 {
     color: #fff;
     background:#0190ad;
     padding: 0px 10px;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -112,8 +114,8 @@ article {
 }
 
 .project-box a, .writing-box a {
-    background: #93cad1;
-    font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
 
 .codeType {
